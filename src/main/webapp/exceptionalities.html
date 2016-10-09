@@ -31,16 +31,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-    <!-- Custom CSS -->
-    <style>
-        body {
-            padding-top: 70px;
-            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-        }
-
-        .othertop{margin-top:10px;}
-    </style>
-
     <link rel="stylesheet" href="../resources/styles/icons.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -53,18 +43,46 @@
 </head>
 
 <body>
+
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="label label-success"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img height = 40px width="200px" src="../resources/assets/logo.png"></a>
+        </div>
+        <center>
+            <div> class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="wall.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="challenges.html">Challenges</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                </ul>
+            </div>
+    </div>
+</nav>
+
 <!-- Sidebar -->
 
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
-       <li>
-           <a href = "Profile.html">Basic details</a>
+        <li>
+            <a href = "Profile.html">Basic details</a>
         </li>
         <li>
             <a href = "EmergencyContact.html">Emergency Contact</a>
         </li>
         <li>
-           <a href = "exceptionalities.html">Exceptionalities</a>
+            <a href = "exceptionalities.html">Exceptionalities</a>
         </li>
         <li>
             <a href="interests.html">Interests</a>
@@ -75,33 +93,31 @@
 <!-- /#sidebar-wrapper -->
 
 
-
 <div class="container">
     <div class="row">
         <div class="col-md-10 ">
             <form class="form-horizontal">
                 <fieldset>
 
-             <!-- Text input-->
+                    <!-- Text input-->
                     <div class="form-group">
                         <label class="col-md-8" for="exceptionality">Select your exceptionality</label>
                         <div class="col-md-12">
-                                <img class = "disabicon" src = "../resources/assets/Disability-AD.png"/><br>
-                                <img class = "disabicon" src = "../resources/assets/Disability-Blind.png"/><br>
-                                <img class = "disabicon" src = "../resources/assets/Disability-Hearing.png"/><br>
-                                <img class = "disabicon" src = "../resources/assets/Disability-Q.png"/><br>
-                                <img class = "disabicon" src = "../resources/assets/Disability-Wheelchair.png"/><br>
-                    </div>
-
-
+                            <img class = "disabicon" src = "../resources/assets/Disability-AD.png"/><br>
+                            <img class = "disabicon" src = "../resources/assets/Disability-Blind.png"/><br>
+                            <img class = "disabicon" src = "../resources/assets/Disability-Hearing.png"/><br>
+                            <img class = "disabicon" src = "../resources/assets/Disability-Q.png"/><br>
+                            <img class = "disabicon" src = "../resources/assets/Disability-Wheelchair.png"/><br>
                         </div>
+                        <center>   <button style="margin-top: 10px" type="button" class="btn btn-primary">Submit</button></center>
                     </div>
-
-    </fieldset>
-            </form>
         </div>
 
+        </fieldset>
+        </form>
     </div>
+
+</div>
 </div>
 <!-- jQuery Version 1.11.1 -->
 <script src="js/jquery.js"></script>
