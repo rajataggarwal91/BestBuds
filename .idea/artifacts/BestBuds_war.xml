@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BestBuds:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="BestBuds.war">
+      <element id="artifact" artifact-name="BestBuds:war exploded" />
+    </root>
+  </artifact>
+</component>
